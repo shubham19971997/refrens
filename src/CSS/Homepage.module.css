@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(27, 25, 25);
+}
+
+.card{
+    margin: 10px;
+    cursor: pointer;
+    background-color: rgba(16, 15, 15, 0.945);
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform .3s;
+    box-shadow: 0 4px 8px 0 #3af700a5;
+
+}
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 5px 8px #3AF700   ;
+}
+
+.card>img{
+    border-radius: 5px;
+    height: 38vh;
+    width: 19vw;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 17vw;
+    text-align: left;
+    text-decoration: none;
+}
+.infols{
+    margin-left: auto;
+    margin-right: auto;
+}
+.infols>p{
+    font-family: 'Bangers', cursive;
+    color:#3AF700;
+    letter-spacing: 1.5px;
+    font-size: 1.2vw;
+    padding: 3px;
+}
+a:-webkit-any-link {
+    color: black;
+    text-decoration: none;
+}
+span{
+    font-weight: 600;
+}
+
+.pagntncontainer{
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    padding: 20px;
+}
+.pagntncontainer>button {
+    background-color:black;
+    height: 6vh;
+    color: #3AF700;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.pagntncontainer>button:hover{
+    background-color: rgb(9, 9, 9);
+}
+.pagntncontainer>p{
+    margin: 1vh;
+}
+@media only screen and (max-width: 420px) {
+    
+    .card{
+        flex-direction: row;
+        width: auto;
+        margin: 5px;
+        padding: 5px;
+    }
+    .card>img {
+        height: 20vh;
+        width: 30vw;
+    }
+    .info{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .infols>p{
+        font-size: .5em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pagntncontainer>p{
+        font-size: .7em;
+    }
+  } 
